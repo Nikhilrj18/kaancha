@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import { Route, Routes } from "react-router-dom";
 import Reels from "./pages/Reels";
 import Home from "./pages/Home";
-import Project from "./pages/project";
+import Project from "./pages/Project";
 
 const App = () => {
   return (
