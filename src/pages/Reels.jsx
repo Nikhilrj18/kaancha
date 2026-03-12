@@ -56,7 +56,7 @@ const Reels = () => {
             ref={(el) => (videosRef.current[index] = el)}
             src={item.video}
             loop
-            muted
+          
             playsInline
             className="h-full w-full object-cover"
           />
