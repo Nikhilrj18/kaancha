@@ -11,7 +11,7 @@ import video8 from "../assets/videos/video8.mp4";
 import video9 from "../assets/videos/video9.mp4";
 import video10 from "../assets/videos/video10.mp4";
 import video11 from "../assets/videos/video11.mp4";
-import video12 from "../assets/videos/video.mp4";
+import video12 from "../assets/videos/video12.mp4";
 
 const Reels = () => {
   const videosRef = useRef([]);
