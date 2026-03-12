@@ -1,34 +1,21 @@
 import React, { useEffect, useRef } from "react";
 
-import video1 from "../assets/videos/video1.mp4";
-import video2 from "../assets/videos/video2.mp4";
-import video3 from "../assets/videos/video3.mp4";
-import video4 from "../assets/videos/video4.mp4";
-import video5 from "../assets/videos/video5.mp4";
-import video6 from "../assets/videos/video6.mp4";
-import video7 from "../assets/videos/video7.mp4";
-import video8 from "../assets/videos/video8.mp4";
-import video9 from "../assets/videos/video9.mp4";
-import video10 from "../assets/videos/video10.mp4";
-import video11 from "../assets/videos/video11.mp4";
-import video12 from "../assets/videos/video12.mp4";
-
 const Reels = () => {
   const videosRef = useRef([]);
 
   const arry = [
-    { id: 1, video: video1 },
-    { id: 2, video: video8 },
-    { id: 3, video: video10 },
-    { id: 4, video: video11 },
-    { id: 5, video: video9 },
-    { id: 6, video: video6 },
-    { id: 7, video: video7 },
-    { id: 8, video: video2 },
-    { id: 9, video: video5 },
-    { id: 10, video: video3 },
-    { id: 11, video: video4 },
-    { id: 12, video: video12 },
+    { id: 1, video: "/videos/video1.mp4" },
+    { id: 2, video: "/videos/video8.mp4" },
+    { id: 3, video: "/videos/video10.mp4" },
+    { id: 4, video: "/videos/video11.mp4" },
+    { id: 5, video: "/videos/video9.mp4" },
+    { id: 6, video: "/videos/video6.mp4" },
+    { id: 7, video: "/videos/video7.mp4" },
+    { id: 8, video: "/videos/video2.mp4" },
+    { id: 9, video: "/videos/video5.mp4" },
+    { id: 10, video: "/videos/video3.mp4" },
+    { id: 11, video: "/videos/video4.mp4" },
+    { id: 12, video: "/videos/video12.mp4" },
   ];
 
   useEffect(() => {
@@ -44,7 +31,7 @@ const Reels = () => {
           }
         });
       },
-      { threshold: 0.7 },
+      { threshold: 0.7 }
     );
 
     videosRef.current.forEach((video) => {
@@ -69,7 +56,7 @@ const Reels = () => {
             ref={(el) => (videosRef.current[index] = el)}
             src={item.video}
             loop
-            // muted
+            muted
             playsInline
             className="h-full w-full object-cover"
           />
